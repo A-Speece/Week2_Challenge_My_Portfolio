@@ -1,15 +1,15 @@
 /* Universal Selector */
 * {
-  margin:0;
-  padding:0; 
-  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-  --black:#212529;
+:root {
+  --black: #212529;
   --dark-grey: #343a40;
-  --grey:#6c757d;
-  --light-grey:#adb5bd;
-  --white:#f8f9fa;
+  --grey: #6c757d;
+  --light-grey: #adb5bd;
+  --white: #f8f9fa;
 }
 
 /* Element Selectors */
@@ -38,7 +38,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #FDF8F5;
+  color: #fdf8f5;
 }
 
 header,
@@ -59,7 +59,7 @@ footer {
   margin-top: 0;
   bottom: 0;
   border-bottom: 10px solid var(--dark-grey);
-  color: #FDF8F5;    
+  color: #fdf8f5;
 }
 
 figure {
@@ -77,12 +77,12 @@ img {
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
-  border-top: 3px solid var(--dark-grey); 
-  background-color: var(--light-grey); 
+  border-top: 3px solid var(--dark-grey);
+  background-color: var(--light-grey);
 }
 
 section a {
-  color:var(--black);
+  color: var(--black);
 }
 
 form {
@@ -90,7 +90,7 @@ form {
   margin: 0 auto;
   width: 500px;
   padding: 10px;
-  border: 5px solid #DDAF94;
+  border: 5px solid #ddaf94;
   border-radius: 20px;
 }
 
@@ -98,8 +98,8 @@ label {
   display: inline-block;
   width: 100px;
 }
-  
-input, 
+
+input,
 textarea {
   box-sizing: border-box;
   width: 300px;
@@ -110,17 +110,16 @@ textarea {
   vertical-align: top;
   height: 60px;
 }
-  
+
 .row {
   display: flex;
 }
 
-
 .column {
-  flex: 33.33%;
   padding: 5px;
+  width: 50%;
 }
- 
+
 /* Class Selectors */
 .text-center {
   text-align: center;
@@ -128,4 +127,10 @@ textarea {
 
 .text-right {
   text-align: right;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
