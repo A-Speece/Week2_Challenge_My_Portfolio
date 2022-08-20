@@ -1,7 +1,15 @@
 /* Universal Selector */
 * {
   margin:0;
-  padding:0;  
+  padding:0; 
+  box-sizing: border-box; 
+}
+:root{
+  --black:#212529;
+  --dark-grey: #343a40;
+  --grey:#6c757d;
+  --light-grey:#adb5bd;
+  --white:#f8f9fa;
 }
 
 /* Element Selectors */
@@ -9,8 +17,8 @@ body {
   position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px;
-  background-color: #FDF8F5;
-  color: #4F4846;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 h1,
@@ -38,19 +46,19 @@ footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: #266150;
+  background-color: var(--black);
 }
 
 header {
   position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  border-bottom: 10px solid var(--light-grey);
 }
 
 footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
+  border-bottom: 10px solid var(--dark-grey);
   color: #FDF8F5;    
 }
 
@@ -59,15 +67,18 @@ figure {
 }
 
 img {
+  width: 300px;
+  height: auto;
   display: block;
   margin: 20px auto;
+  border: 5px solid var(--black);
 }
 
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
+  border-top: 3px solid var(--dark-grey); 
+  background-color: var(--light-grey); 
 }
 
 form {
@@ -88,7 +99,7 @@ input,
 textarea {
   box-sizing: border-box;
   width: 300px;
-  border: 1px solid #4F4846;
+  border: 1px solid var(--black);
 }
 
 textarea {
@@ -96,11 +107,14 @@ textarea {
   height: 60px;
 }
   
-button {
-  height: 40px;
-  width: 120px;
-  background-color: #4F4846;
-  color: #FDF8F5;
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
  
 /* Class Selectors */
