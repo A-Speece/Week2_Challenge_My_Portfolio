@@ -81,6 +81,10 @@ section {
   background-color: var(--light-grey); 
 }
 
+section a {
+  color:var(--black);
+}
+
 form {
   /* Center the form on the page */
   margin: 0 auto;
